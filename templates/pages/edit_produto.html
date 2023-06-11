@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<form method="PUT" action="/edit/{{id}}">
+<!--<form method="PUT" action="{{url_for('edit', id=id)}}"></form> -->
+    <input type="hidden" name="_method" value="PUT">
+    <label for="name">Nome:</label><br>
+    <input type="text" name="name" placeholder="{{produto[0][1]}}"> <br>
+    <label for="desc">Descrição:</label><br>
+    <input type="text" name="desc" placeholder="{{produto[0][2]}}"> <br>
+    <label for="price">Preço:</label><br>
+    <input type="text" name="price"  placeholder="{{produto[0][3]}}"> <br>
+    <input type="submit" value="Editar">
+
+</form>
+
+{% endblock %}

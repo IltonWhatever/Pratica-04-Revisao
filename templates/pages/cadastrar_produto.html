@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block main %}
+{% if msg is not none %}
+    <p style="color: green;">{{msg}}</p>
+{% endif %}
+
+<form method="POST" action="{{url_for('register')}}">
+
+    <label for="name">Nome:</label><br>
+    <input type="text" name="name"> <br>
+    <label for="desc">Descrição:</label><br>
+    <input type="text" name="desc"> <br>
+    <label for="price">Preço:</label><br>
+    <input type="text" name="price"> <br>
+    <input type="submit" value="Cadastrar">
+
+</form>
+
+{% endblock %}

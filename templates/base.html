@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>    
+    <body>
+        <h1>{{titulo_pagina}}</h1>
+        {% include 'navbar.html' %}
+        {% block main %}
+        {% endblock %}
+        {% include 'footer.html' %}
+    </body>
+</html>

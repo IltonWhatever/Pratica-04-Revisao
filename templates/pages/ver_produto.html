@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block main %}
+
+    <ul>
+        <li>ID: {{produto[0][0]}}</li>
+        <li>Nome: {{produto[0][1]}}</li>
+        <li>Descrição: {{produto[0][2]}}</li>
+        <li>Preço: {{produto[0][3]}}</li>
+    </ul>
+    <p><a href="/edit_produto/{{produto[0][0]}}">Editar</a></p>
+    <p><a href="/delete_produto/{{produto[0][0]}}">Excluir</a></p>
+
+{% endblock %}
